@@ -1,0 +1,23 @@
+Teórico:
+
+1- O(Wave)
+
+2- 3SAT es NP-completo
+
+3- Probar que el valor de todo flujo es menor o igual que la capacidad de todo corte y que si f es un flujo, entonces las siguientes
+afirmaciones son equivalentes:
+1) Existe un corte S tal que v(f) = cap(S). (y en este caso, S es minimal)
+2) f es maximal.
+3) No existen f-caminos aumentantes.
+(puede usar sin necesidad de probarlo que si f es flujo y S es corte entonces v(f) = f(S,¬S) − f(¬S, S))
+
+
+Ejercicio 1 práctico opcional:
+
+En una isla hay caballeros y pícaros. Los caballeros siempre dicen la verdad y los pícaros siempre mienten. Hay 12 personas en total, se hace una fiesta entre ellas. Cada persona sabe con certeza quién es caballero y quién es pícaro. Al terminar la fiesta se le pregunta a cada persona a cuántos caballeros saludó. Se obtienen 12 respuestas diferentes, desde {0..12} - {11}. O sea, las respuestas van de {0,1,...,10} + {12}.
+Sea G cuyos vértices son las 12 personas, y los lados las conexiones entre los que se saludaron.
+Sea H subgrafo incluído en G, cuyos vértices están únicamente formados por los caballeros.
+Justifique si la siguiente afirmación es correcta:
+_Los datos dados en el enunciado son suficientes para calcular X(H)_
+Si la considera falsa, dar un contraejemplo donde X(H) = a y X(H) = b, con a != b.
+
